@@ -28,7 +28,8 @@ export class GameOverComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  
+  // It's for the final popover window
   initParameters(inputs: { won: boolean, numberOfGuesses: number, lastGuess: PegColor[], secretColors: PegColor[] }, outputs: { restart: (...args: any[]) => any }) {
     for (let prop in inputs)
       this[prop] = inputs[prop];
