@@ -27,4 +27,13 @@ export class AppComponent {
 
     console.log(this.guesses);
   }
+
+  addColorToCurrentGuess(color: PegColor) {
+    this.currentGuess.splice(this.currentGuess.indexOf('unset'), 1, color);
+  }
+
+  removeColorFromCurrentGuess(index: number) {
+    this.currentGuess.splice(index, 1);
+    this.currentGuess.push('unset');
+  }
 }

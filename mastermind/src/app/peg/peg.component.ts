@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { Input } from '@angular/core';
+import { Component, OnInit, EventEmitter } from '@angular/core';
+import { Input, Output } from '@angular/core';
 import {PegColor} from '../models/peg-color';
 import {PegType} from '../models/peg-type';
 
@@ -17,9 +17,16 @@ export class PegComponent implements OnInit {
   @Input()
   type: PegType;
 
+  @Output()
+  pegClick: EventEmitter<void> = new EventEmitter()
+
 
   get colorLower() {
     return this.color ?? "unset"; 
+  }
+
+  onPegClicked(){
+    this.pegClick.emit()
   }
 
   constructor() { }

@@ -1,1 +1,4 @@
-<div class="peg peg-{{colorLower}} peg-{{type}}"></div>
+<div class="peg peg-{{colorLower}} peg-{{type}}" 
+    (click)="onPegClicked()"
+    [style.cursor]="pegClick.observers.length > 0 ? 'pointer' : 'initial'">
+</div>
