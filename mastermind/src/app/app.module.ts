@@ -4,11 +4,13 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
 import { PegComponent } from './peg/peg.component';
+import { GameOverComponent } from './game-over/game-over.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PegComponent
+    PegComponent,
+    GameOverComponent
   ],
   imports: [
     BrowserModule,

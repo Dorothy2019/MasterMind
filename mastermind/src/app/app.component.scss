@@ -18,6 +18,11 @@ main {
 .current-guess-container {
     background: #f0f0f0
 }
+
 .current-guess-container {
     background: #f0f0f0
+}
+
+button:disabled, .btn:disabled {
+    cursor: not-allowed !important;
 }
