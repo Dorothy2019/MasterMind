@@ -13,7 +13,7 @@ import {AppRoutingModule} from './app-routing/app-routing.module';
 
 const routes: Routes = [
   {path: 'mm-game', component: GameComponent},
-  {path: 'mm-carousel ', component:CarouselComponent}
+  {path: 'mm-carousel', component:CarouselComponent}
 ];
 
 @NgModule({
