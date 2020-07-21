@@ -1,15 +1,21 @@
 <!DOCTYPE html>
+
 <html>
 <body style="background-color: antiquewhite;">
   <h1 class="text" @carouselAnimation>Welcome to Masterminds</h1>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-light">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-warning">
     <a class="navbar-brand" href="#"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
   
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="nav nav-tabs nav-pills nav-fill">
+      <ul class="nav nav-tabs nav-pills nav-fill ">
+        <li class="nav-item ">
+          <a class="navbar-brand" href="#">
+            <img src="../assets/mastermind1.jpg" width="30" height="30" alt="">
+          </a>
+        </li>
         <li class="nav-item ">
           <a class="nav-link active" href="/mm-carousel">Start Intro<span class="sr-only">(current)</span></a>
         </li>
@@ -19,5 +25,20 @@
       </ul>
     </div>
   </nav>
+  <h2>Rule:</h2>
+  <a>The two players decide in advance how many games they will play, which must be an even number.
+     One player becomes the codemaker, the other the codebreaker. The codemaker chooses a pattern of four code pegs. 
+     Duplicates and blanks are allowed depending on player choice, so the player could even choose four code pegs of
+     the same color or four blanks. In the instance that blanks are not elected to be a part of the game, 
+     the codebreaker may not use blanks in order to establish the final code. 
+     The chosen pattern is placed in the four holes covered by the shield, visible to the codemaker 
+     but not to the codebreaker.</a>
+  <a>The codebreaker tries to guess the pattern, in both order and color, within eight to twelve turns. 
+    Each guess is made by placing a row of code pegs on the decoding board. 
+    Once placed, the codemaker provides feedback by placing from zero to four key pegs in the small holes of the row
+    with the guess. A colored or black key peg is placed for each code peg from the guess which is correct in both
+    color and position. A white key peg indicates the existence of a correct color code peg placed in the wrong
+    position.</a>
 </body>
+<router-outlet></router-outlet>
 </html>
