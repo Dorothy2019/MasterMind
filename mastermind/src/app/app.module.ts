@@ -8,12 +8,15 @@ import { GameOverComponent } from './game-over/game-over.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { GameComponent } from './game/game.component';
 import {Routes, RouterModule} from '@angular/router';
-import {AppRoutingModule} from './app-routing/app-routing.module';
+//import {AppRoutingModule} from './app-routing/app-routing.module';
+import { LoginComponent } from './login/login.component';
 
 
 const routes: Routes = [
-  {path: 'mm-game', component: GameComponent},
-  {path: 'mm-carousel', component:CarouselComponent}
+  {path: 'game', component: GameComponent},
+  {path: 'carousel', component:CarouselComponent}, 
+  {path: 'login', component: LoginComponent},
+  {path: 'register', component: LoginComponent}
 ];
 
 @NgModule({
@@ -22,14 +25,15 @@ const routes: Routes = [
     PegComponent,
     GameOverComponent,
     CarouselComponent,
-    GameComponent
+    GameComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     NgbModule,
-    //RouterModule.forRoot(routes),
-    AppRoutingModule,
+    RouterModule.forRoot(routes),
+   // AppRoutingModule,
    
   ],
   providers: [],
