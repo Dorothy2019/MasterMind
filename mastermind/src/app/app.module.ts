@@ -10,13 +10,15 @@ import { GameComponent } from './game/game.component';
 import {Routes, RouterModule} from '@angular/router';
 //import {AppRoutingModule} from './app-routing/app-routing.module';
 import { LoginComponent } from './login/login.component';
+import { MainpageComponent } from './mainpage/mainpage.component';
 
 
 const routes: Routes = [
   {path: 'game', component: GameComponent},
   {path: 'carousel', component:CarouselComponent}, 
   {path: 'login', component: LoginComponent},
-  {path: 'register', component: LoginComponent}
+  {path: 'register', component: LoginComponent},
+  {path: "", component: MainpageComponent}
 ];
 
 @NgModule({
@@ -26,13 +28,14 @@ const routes: Routes = [
     GameOverComponent,
     CarouselComponent,
     GameComponent,
-    LoginComponent
+    LoginComponent,
+    MainpageComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     NgbModule,
-    RouterModule.forRoot(routes),
+    RouterModule.forRoot(routes)
    // AppRoutingModule,
    
   ],
